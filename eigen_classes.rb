@@ -1,5 +1,7 @@
 # Ref: http://madebydna.com/all/code/2011/06/24/eigenclasses-demystified.html
 # The above link talks about eigenclasses / singleton classes / metaclasses and their impact in the method lookup
+# http://yehudakatz.com/2009/11/15/metaprogramming-in-ruby-its-all-about-the-self/ - This link (the last table) gives a better picture on where methods are defined (on the class / metaclass?) 
+
 
 class Dog
 end
