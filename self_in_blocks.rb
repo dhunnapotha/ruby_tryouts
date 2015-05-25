@@ -1,4 +1,5 @@
 # References http://nsomar.com/untiabout-ruby-selftled/
+# Couldn't write test cases as self is being set at the test case class name :-/
 class MyClass
   def run_block(block)
     block.call
