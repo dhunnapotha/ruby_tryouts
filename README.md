@@ -7,4 +7,5 @@ Tryouts in particular are:
 - eigen_classes.rb -> Talks about eigenclass (singleton/ metaclass) methods for both instances and classes
 - self_in_functions.rb -> Talks about the value of self in various ways of function definitions and declarations
 - self_in_blocks.rb -> Talks about the value of self in various ways of executing proc blocks
+- blocks_procs_lambdas.rb -> Talks about blocks, procs, lambdas, how to pass them and a Gotcha regarding the return statement inside blocks
 

@@ -74,8 +74,8 @@ class ArrayTest < Test::Unit::TestCase
     end
   end
 
+  # Read the comment about GOTCHAs
   def test_return_values_of_procs_and_lamdbas
-    p = Proc.new{return 1}
     l = -> {return 1}
 
     arr = []
