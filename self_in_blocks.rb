@@ -1,5 +1,6 @@
 # References http://nsomar.com/untiabout-ruby-selftled/
 # Couldn't write test cases as self is being set at the test case class name :-/
+# use instance_exec instead of instance_eval when arguments need to be passed
 class MyClass
   def run_block(block)
     block.call
