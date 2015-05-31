@@ -27,7 +27,7 @@ class ArrayTest < Test::Unit::TestCase
 
     arr = [1, 2]
     assert_equal [[1, 1], [1, 2], [2, 2]], arr.repeated_combination(2).to_a
-    assert_equal [[1, 1], [1, 2], [2, 2], [2, 1]], arr.repeated_permutation(2).to_a
+    assert_equal [[1, 1], [1, 2], [2, 1], [2, 2]], arr.repeated_permutation(2).to_a
 
 
     arr1 = [1, 2]
@@ -35,20 +35,10 @@ class ArrayTest < Test::Unit::TestCase
     arr3 = [5, 6]
     assert_equal [[1, 3, 5], [1, 3, 6], [1, 4, 5], [1, 4, 6], [2, 3, 5], [2, 3, 6], [2, 4, 5], [2, 4, 6]], arr1.product(arr2, arr3)
 
-    # bsearch
 
-
-    # &:
-
-    # with_index
-    # collect.with_index
-
-    # combination
-
-
-    # count - 
-
-    # drop_while
+    arr = [1, 2, 3, 4]
+    assert_equal 4, arr.count
+    assert_equal 2, arr.count{|x| x >= 3}
 
 
   end
