@@ -41,6 +41,10 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal 2, arr.count{|x| x >= 3}
 
 
+    # Flattens recursively
+    arr = [1, [2, [3, 4]]]
+    assert_equal [1, 2, 3, 4], arr.flatten
+
   end
 
 
