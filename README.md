@@ -8,4 +8,7 @@ Tryouts in particular are:
 - self_in_functions.rb -> Talks about the value of self in various ways of function definitions and declarations
 - self_in_blocks.rb -> Talks about the value of self in various ways of executing proc blocks
 - blocks_procs_lambdas.rb -> Talks about blocks, procs, lambdas, how to pass them and a Gotcha regarding the return statement inside blocks
+- arrays.rb -> Few array methods worth trying out
+- hashes.rb -> Few hash methods worth trying out 
+- others.rb -> Other ruby related methods.
 
