@@ -46,16 +46,45 @@ class OtherRubyFunctionsTest < Test::Unit::TestCase
   end
 
 
-  # == === equal? eql?
-  # eql is more or less alias to ==, but the classes can have their own behavior
-  # === case equality
+  # == is the normal equal to that we know of
+  # eql? is == + class match
+  # equal? is the exact object match
   def test_equality_operations
-    obj1 = []
-    obj2 = []
 
-    assert obj1 == obj2
-    assert obj1 === obj2
-    assert obj1.eql?(obj2)
-    assert_equal false, obj1.equal?(obj2)
+    num_int = 1
+    num_float = 1.0
+
+    assert_equal true, num_int == num_float
+    assert_equal false, num_int.eql?(num_float)
+    assert_equal false, num_int.equal?(num_float)
+    assert_equal true, num_int.equal?(num_int)
+
   end
+
+  # Ruby gotchas
+
+  # a === b in general means, if a describes a set, would b a member of that set?
+
+  def test_three_equal_signs
+    num_int = 1
+    num_float = 1.0
+
+
+    assert_equal true, num_int === num_float
+    assert_equal true, (1..3) === 2
+    assert_equal false, 2 === (1..3)
+
+
+    assert_equal true, Object === Class
+    assert_equal true, Object === Object
+    assert_equal true, Class  === Object
+    assert_equal true, Class  === Class
+
+
+    assert_equal false, String  === String
+    assert_equal false, Fixnum  === Fixnum
+
+  end
+
+
 end
